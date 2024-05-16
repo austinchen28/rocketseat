@@ -10,7 +10,7 @@ body {
   */
  
 background: var(--bg-color) no-repeat top center /cover;
-
+height: 100vh;
 }
 
 :root {
