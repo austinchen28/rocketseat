@@ -50,6 +50,8 @@ body * {
 
   #container {
     margin: 56px  auto  56px;
+    max-width: 588px;
+    width: 360px;
   }     
 
   /* profile */
@@ -70,7 +72,6 @@ body * {
     line-height: 35px;
     text-align: center;
     margin-top: 8px;
-    border: 1px solid red
   }
 
   /* botao */
@@ -97,7 +98,7 @@ body * {
 
   #switch span {
     display: block;
-    width: 64px;
+    width: 62px;
     height: 24px;
     border: 1px solid var(--strock-color-span);
     border-radius: 9999px;
@@ -117,8 +118,7 @@ body * {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 360px;
-    padding: 24px 0;
+    padding: 24px;
     margin: auto;
   }
 
@@ -136,7 +136,7 @@ body * {
 
   li a:hover {
     border: 1.5px solid var(--text-color);
-    background:var(--surface-color);
+    background:var(--surface-color-hover);
   }
 
   #icons {
@@ -164,3 +164,13 @@ body * {
     text-align: center;
     padding: 24px;
   }
+
+  @media (min-width: 720px) {
+    :root {
+      --bg-color: url(./assets/bg-desktop.jpg);
+    }
+    .light {
+      --bg-color: url(./assets/bg-desktop-light.jpg);
+    }
+  }
+   
