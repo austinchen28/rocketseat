@@ -91,9 +91,14 @@ body * {
      position: absolute;
      z-index: 1;
      top: 1%;
-     left:0;
+     left: 0;
+     animation: slide-left 0.4s;
      transform: translateY(-10%);
 
+  }
+
+  #switch button:hover {
+    outline: 8px solid var(--highlight-color);
   }
 
   #switch span {
@@ -107,8 +112,7 @@ body * {
   }
 
   .light #switch button {
-    left: initial;
-    right:0;
+   animation: slide-right 0.5s forwards;
   }
 
  /* links */
@@ -174,3 +178,20 @@ body * {
     }
   }
    
+@keyframes slide-right {
+  from {
+    left: 0;
+  }
+  to  {
+    left: 50%;
+  } 
+  }
+
+  @keyframes slide-left {
+    from {
+      left: 50%;
+    }
+    to {
+      left: 0;
+    }
+  }
